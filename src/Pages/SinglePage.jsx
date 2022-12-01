@@ -31,7 +31,7 @@ const SinglePage = () => {
             display="flex"
             flexDirection="column"
             item
-            border="1px solid rgb(25,118,210)"
+            border="1px solid white"
             xs={12}
             md={5}
             boxShadow=" rgba(0, 0, 0, 0.16) 0px 1px 4px"
