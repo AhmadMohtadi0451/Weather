@@ -6,10 +6,8 @@ import { Container } from "@mui/material";
 const Header = () => {
   return (
     <Container>
-      <Grid item mt={3} xs={12} textAlign={"center"}>
-        <Typography color="white" variant={"h4"}>
-          Weather App
-        </Typography>
+      <Grid item mb={3} mt={3} xs={12} textAlign={"center"}>
+        <Typography variant={"h4"}>Weather App</Typography>
       </Grid>
     </Container>
   );
