@@ -21,7 +21,6 @@ const WeatherCard = ({ cityWeather, city }) => {
         border="1px solid rgb(25,118,210)"
         xs={12}
         md={5}
-        bgcolor={"white"}
         boxShadow=" rgba(0, 0, 0, 0.16) 0px 1px 4px"
         borderRadius={5}
         color={"common.black"}

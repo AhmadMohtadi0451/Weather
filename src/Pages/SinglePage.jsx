@@ -24,33 +24,35 @@ const SinglePage = () => {
   return (
     <Grid>
       <Header />
-      <Container>
-        <Grid
-          display="flex"
-          flexDirection="column"
-          item
-          border="1px solid rgb(25,118,210)"
-          xs={12}
-          md={5}
-          bgcolor={"white"}
-          boxShadow=" rgba(0, 0, 0, 0.16) 0px 1px 4px"
-          borderRadius={5}
-          color={"common.black"}
-          p={4}
-        >
-          <Typography variant="h5">{city}:</Typography>
+      <Grid mt={10}>
+        <Container>
+          <Grid
+            mt={5}
+            display="flex"
+            flexDirection="column"
+            item
+            border="1px solid rgb(25,118,210)"
+            xs={12}
+            md={5}
+            boxShadow=" rgba(0, 0, 0, 0.16) 0px 1px 4px"
+            borderRadius={5}
+            color={"common.black"}
+            p={4}
+          >
+            <Typography variant="h5">{city}:</Typography>
 
-          <Grid>
-            {daysIndex.map((index) => (
-              <FutureCard
-                key={index}
-                index={index}
-                cityWeatherFuture={cityWeatherFuture}
-              />
-            ))}
+            <Grid>
+              {daysIndex.map((index) => (
+                <FutureCard
+                  key={index}
+                  index={index}
+                  cityWeatherFuture={cityWeatherFuture}
+                />
+              ))}
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </Grid>
     </Grid>
   );
 };
