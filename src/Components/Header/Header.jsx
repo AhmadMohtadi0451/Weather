@@ -5,11 +5,20 @@ import { Container } from "@mui/material";
 
 const Header = () => {
   return (
-    <Container>
-      <Grid item mb={3} mt={3} xs={12} textAlign={"center"}>
-        <Typography variant={"h4"}>Weather App</Typography>
-      </Grid>
-    </Container>
+    <Grid
+      bgcolor="rgb(25,118,210)"
+      p={5}
+      item
+      mb={3}
+      xs={12}
+      textAlign={"center"}
+    >
+      <Container>
+        <Typography color="white" variant={"h4"}>
+          Weather App
+        </Typography>
+      </Container>
+    </Grid>
   );
 };
 
